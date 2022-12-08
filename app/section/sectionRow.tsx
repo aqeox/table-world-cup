@@ -19,7 +19,7 @@ export default function SectionRow({matches,date}:Props) {
   return (
     <div className='mt-[40px]'>
      <DateTitle date={date} />
-     <div className='grid grid-cols-1 md:grid-cols-2 1g:grid-cols-3 gap-[30px]'/>
+     <div className='grid grid-cols-1 md:grid-cols-2 1g:grid-cols-3 gap-[30px] mt-[10px]'/>
     {matches?.map((match,index)=>(
       <Card key={index} match={match}/>
     ))}
